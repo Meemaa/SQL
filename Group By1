@@ -1,0 +1,26 @@
+/*Example 1: using avg as aggregation ftn,. Query 1*/
+
+select Sector, avg(age)  from attendees
+group by Sector
+order by avg(age) asc;
+/*with ordering of avg age in ascending order*/
+/*Query 2*/
+select Sector, avg(age)  from attendees
+group by Sector
+having avg(age) > 66
+/*if put this in then Tech is not shown as it has avg age of 65)*/
+order by avg(age) asc;
+/*having works only on calculated columns otherwise use "where"*/
+
+/* remember it must be exactly the same name so capital won't work e.g. Attendees*/
+
+/*Example 2: using max as the aggregation ftn. Query 3*/
+
+select Sector, max(assets)  from attendees
+group by Sector;
+
+/*Example 3: using where. Query 4*/
+select Sector, avg(salary) from attendees
+where age > 35
+group by Sector
+having avg(salary) > 11500;
