@@ -1,0 +1,8 @@
+select heroname,
+case
+when city = "Q" Then "Queens"
+else "Other City"
+End
+From attendees;
+/*Case Statements like if else but called case statement in SQL*/
+/*Used for element by element filtering using else*/
