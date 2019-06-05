@@ -1,0 +1,6 @@
+select *
+from attendees
+inner join avgsalary on attendees.city = avgsalary.city2
+/*full outer join works in SQL but not in MySQL, so use just "join"*/
+
+/*can also use alias to filter and then join*/
