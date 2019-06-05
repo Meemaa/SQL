@@ -1,0 +1,5 @@
+select * from attendees
+where MOD(personid, 2) = 0;
+
+select heroname from attendees
+where MOD(personid, 2) = 0;
