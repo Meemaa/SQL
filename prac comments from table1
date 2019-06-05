@@ -1,0 +1,18 @@
+select * from attendees;
+ /*gives the full table*/
+ 
+ select * from attendees where salary =
+(select max(salary)
+ from attendees);
+ /*gives the details of the highest salary*/
+ 
+ select max(salary) from attendees where salary
+ not in
+ (select max(salary)
+ from attendees);
+ /*gives the second highest salary*/
+ 
+ select *,
+ concat(cast(assets/1000 as CHAR), 'k') Assetsink
+ from attendees
+ /*to put a number and a character next to eachother called column Assetsink here*/
