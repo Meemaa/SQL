@@ -1,0 +1,5 @@
+/*union all stacks table*/
+SELECT * from avgsalary
+union all
+/*union ignores duplicates, union all has all duplicates*/
+select * from avgsalary2;
