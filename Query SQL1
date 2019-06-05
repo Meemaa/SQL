@@ -1,0 +1,5 @@
+SELECT * FROM attendees;
+SELECT * FROM avgsalary;
+select *, assets/salary as frugalmeasure
+from attendees
+order by frugalmeasure desc;
