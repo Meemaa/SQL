@@ -1,0 +1,25 @@
+CREATE TABLE Attendees (
+  PersonID int, 
+  Heroname varchar(255), 
+  Age int, 
+  Assets int, 
+  Sector varchar(255), 
+  Gender varchar(10)
+);
+INSERT INTO Attendees (
+  PersonID, Heroname, Age, Assets, Sector, 
+  Gender
+) 
+VALUES 
+  (
+    1, 'Spider Man ', 32, 300000, 'Fin', 
+    null
+  ), 
+  (
+    2, 'Spider Man ', 32, 300000, 'Fin', 
+    null
+  ), 
+  (
+    2, 'Spider Man ', 32, 300000, 'Fin', 
+    null
+  );
